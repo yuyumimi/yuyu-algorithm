@@ -22,7 +22,8 @@ module.exports = async (data) => {
   };
 
   const styleSettingsCss = process.env.STYLE_SETTINGS_CSS || "";
-  const styleSettingsBodyClasses = process.env.STYLE_SETTINGS_BODY_CLASSES || "";
+  const styleSettingsBodyClasses =
+    process.env.STYLE_SETTINGS_BODY_CLASSES || "";
 
   if (process.env.NOTE_ICON_TITLE && process.env.NOTE_ICON_TITLE == "true") {
     bodyClasses.push("title-note-icon");
@@ -69,7 +70,7 @@ module.exports = async (data) => {
     noteIconsSettings,
     timestampSettings,
     baseTheme: process.env.BASE_THEME || "dark",
-    siteName: process.env.SITE_NAME_HEADER || "Digital Garden",
+    siteName: process.env.SITE_NAME_HEADER || "YuYu Note",
     mainLanguage: process.env.SITE_MAIN_LANGUAGE || "en",
     siteBaseUrl: baseUrl,
     styleSettingsCss,
